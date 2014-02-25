@@ -8,7 +8,7 @@ The export script (**onapp-export-recipe.py**) can be executed as follows:
 
 An example of this command to download Recipe ID 20 from the http://mycloud.com OnApp Control Panel:
 
-  python onapp-export-recipe.py http://mycloud.com admin password 20
+    python onapp-export-recipe.py http://mycloud.com admin password 20
     
 This will create a file titled `20.recipe.json`. 
 
@@ -20,7 +20,7 @@ The import script (**onapp-import-recipe.py**) can be executed as follows:
 
 An example of this command to upload a recipe file `20.recipe.json` to the  http://mycloud.com OnApp Control Panel:
 
-  python onapp-import-recipe.py http://mycloud.com admin password 20.recipe.json
+    python onapp-import-recipe.py http://mycloud.com admin password 20.recipe.json
     
 This will import the recipe from the file `20.recipe.json`. Please note, Recipe labels need to be unique. You may get a 422 Unprocessible Entity error if you try to import a recipe which has the same label as an existing recipe.
 
